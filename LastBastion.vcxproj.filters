@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Classes\GameEngine.h" />
+    <ClInclude Include="Classes\GameLog.h" />
+    <ClInclude Include="Classes\MenuItem.h" />
+    <ClInclude Include="BaseClasses\BaseGameState.h" />
+    <ClInclude Include="BaseClasses\BaseMenu.h" />
+    <ClInclude Include="BaseClasses\BaseMonster.h" />
+    <ClInclude Include="BaseClasses\BaseMovingObject.h" />
+    <ClInclude Include="BaseClasses\BaseObject.h" />
+    <ClInclude Include="BaseClasses\BaseTower.h" />
+    <ClInclude Include="GameClasses\TestMonster.h" />
+    <ClInclude Include="GameClasses\TestTower.h" />
+    <ClInclude Include="HelperClasses\AnimationHelper.h" />
+    <ClInclude Include="HelperClasses\AssetLoader.h" />
+    <ClInclude Include="HelperClasses\AudioHelper.h" />
+    <ClInclude Include="HelperClasses\EventHelper.h" />
+    <ClInclude Include="HelperClasses\MemoryManager.h" />
+    <ClInclude Include="HelperClasses\RenderHelper.h" />
+    <ClInclude Include="HelperClasses\SaveGameHandler.h" />
+    <ClInclude Include="HelperClasses\Timer.h" />
+    <ClInclude Include="StateClasses\IntroState.h" />
+    <ClInclude Include="StateClasses\LevelSelectState.h" />
+    <ClInclude Include="StateClasses\LoadGame.h" />
+    <ClInclude Include="StateClasses\LoadGameState.h" />
+    <ClInclude Include="StateClasses\MainMenuState.h" />
+    <ClInclude Include="StateClasses\MapState.h" />
+    <ClInclude Include="StateClasses\NewGameState.h" />
+    <ClInclude Include="StateClasses\PauseState.h" />
+    <ClInclude Include="StateClasses\PopUpState.h" />
+    <ClInclude Include="StateClasses\SaveGameState.h" />
+    <ClInclude Include="StateClasses\SettingState.h" />
+    <ClInclude Include="StateClasses\ShopState.h" />
+    <ClInclude Include="StateClasses\StartState.h" />
+    <ClInclude Include="StateClasses\TalentState.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\GameEngine.cpp" />
+    <ClCompile Include="Classes\GameLog.cpp" />
+    <ClCompile Include="Classes\MenuItem.cpp" />
+    <ClCompile Include="HelperClasses\AudioHelper.cpp" />
+    <ClCompile Include="HelperClasses\RenderHelper.cpp" />
+    <ClCompile Include="HelperClasses\Timer.cpp" />
+    <ClCompile Include="StateClasses\IntroState.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StateClasses\StartState.cpp" />
+    <ClCompile Include="StateClasses\MainMenuState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="TODO.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GDD.txt" />
+  </ItemGroup>
+</Project>

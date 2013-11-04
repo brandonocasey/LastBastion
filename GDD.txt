@@ -1,0 +1,578 @@
+GameEngine - Put Everything together
+    * Should tell other things what to do
+    * should be able to Quit at any time and tell everything else to quit
+    * if EventHandler does not work this might need to filter out global events
+
+RenderHelper - List all the rendering functionality that I need
+    * should help with all rendering/loading functionality
+
+AudioHelper - List all audio functionality I need
+    * Should help with all Audio playing/loading functionality
+
+EventHandler - List all events that need to be handled
+    * should handle the conversion of events depending on a platform.
+    * Should handle all events that would otherwise be declared everywhere
+
+SaveGameHandler - List everything in the game that needs to be saved
+    * should parse a save file
+    * should init our game with values rather than using defaults.
+
+AssetLoader - How should we load a list of assets for a levels use?
+    * Should be able to multiple textures from one image
+    * Should be able to load one image
+    * should be able to load multiple images
+    * should be able to load audio
+    * should be able to load multiple audio things
+    * should be able to check what save files exist
+    * should cleanup everything not in use
+    * should report current map, save, etc
+    * Should be able to load map file classes
+
+Animation Class - How do we control the drawing of animations for our class
+
+Timer Class - We need to know when the timer started, and how long we want it to be
+    * When it started
+    * how much time has passed
+    * when to end
+    * to restart
+    * lots of things
+
+
+BaseObject - What should it have?
+    * Should have access to Game
+    * def
+    * attack
+    * health
+    * visible?
+
+BaseMovingObject - What Should it have?
+    * move
+    * animate
+
+BaseState
+    * should do all of the things that every state has to do
+
+BaseMenu
+    * should tell menuitems what to do
+    * Should have a header for the name of the menu that can be in picture or text format
+    * Should Animate off and on with alpha
+    * needs to be given staring location for menu items
+    * Needs to be given a starting location for the header
+    * Needs to be
+
+ConfirmationMenu
+    * Should pop over all other screens with a yes no option
+    * should be passed a callback function
+    * should be passed text options, including question text, and confirm/reject text
+
+MenuItem
+    * Should control all menu item functionality, but only do what it is told
+    * Should be possible to make unselectable
+    * Needs to shrink and grow/change colors when selected
+
+MemoryManager
+    * Should control the creation and deletion of objects.
+    * Objects should be reused and zeroed out rather than completely deleted.
+    * This will make the game considerably faster through memory re-use
+    * This class should be the only class to cleanup anything on cleanup.
+
+Map Class
+    * Should Draw itself
+    * Should Update itself
+    * Should Have a preview of itself
+    * Should contain an amount of levels that are needed in order to play this one
+    * Should Contain the monsters waves that will be faced
+
+States:
+    * Intro
+        * Needs Logo's that need to be printed
+        * Text Over some logos not all
+        * Needs to be skip able
+        * Logos change every 3 seconds
+    * Press Start
+        * Needs a background
+        * Needs a logo
+        * Needs to be bypassed by pressing any button
+        * Needs to return to intro after three minutes of nothing happening
+    * Main Menu
+        * Needs a background
+        * Needs a logo
+        * Needs menu options
+        * Needs to support controller with up/down and collision
+        * Needs to make Load Game selectable not show if there are no games to Load
+    * Settings
+        * Needs a background
+        * Needs a logo
+        * Needs menu options
+        * Menu Options need to change game settings
+            - Brightness
+            - Volume
+            - Clear all save data
+            - Toggle Full screen
+            - Change Resolution
+        * Should return to menu after 3 minutes of inactivity
+    * Quit Pop Up
+        * Should have an alpha overlay over most of the other screens
+        * Should have a question with two boxes all labeled dynamically
+    * Load Game
+        * Need a background
+        * Should only show games that can be loaded
+        * Show each game save with information on the game save
+        * should be able to call something to parse a save file
+        * Should be able to pass that information somewhere else
+    * Save Game
+        * Needs a background
+        * Should be able to take all relevant object for saving and put them into a file
+            - Player Name
+            - Levels Completed
+            - Current Talents
+            - Current Items
+        * The file should not be easily editable
+        * The File should be saved to a standard directory
+        * after saving the game, this state should pop back to where it was.
+        * Should be able to save without actually bringing up graphics and then pop back
+        * This needs a background and some way to scroll through a list
+    * New Game
+        * Should ask for text input
+        * should have a confirm for that name
+        * should ask the user which save file they want
+        * should have a confirm screen
+        * Needs a background
+        * Needs a header
+    * Level Select
+        * Needs a background
+        * Needs a title
+        * Should have the menu options listed on the left
+        * Should have all the levels that can currently be played listed to the right
+    * In Game
+        * Needs to be able to Pause
+        * Needs to have a layer for the map
+        * Needs to have a layer for the monsters
+        * Needs a layer for towers
+        * Needs to have a layer for the UI
+        * Needs to have a layer for the player controller
+        * Needs to spawn monsters at intervals
+        * Needs to let the user make towers
+        * Needs to let the user move around the map
+    * Shop
+        * NYI
+    * Talents
+        * Should be able to change at any time
+        * Should get more depending on how many levels have been beaten
+        * Should effect aspects of the game and towers
+    * Pause Screen
+        * Should overlay over the game
+        * Should be smaller than other menus
+        * Should be opaque
+
+State Trees
+    *Menu
+        * Intro -> Press Start
+        * Intro <- Press Start
+        * Press Start -> Main Menu
+        * Press Start <- Main Menu
+        * Main Menu -> Settings
+        * Main Menu <- Settings
+        * Main Menu <- Load Game
+        * Main Menu -> Load Game
+        * Main Menu -> Quit Confirmation
+        * Main Menu <- Quit Confirmation
+        * Main Menu -> New Game
+        * Main Menu <- New Game
+        * New Game -> Game
+
+    * Game
+        * Level Select -> Talent Screen
+        * Level Select <- Talent Screen
+        * Level Select -> Shop
+        * Level Select <- Shop
+        * Level Select -> Exit to Menu Confirmation
+        * Level Select <- Exit to Menu Confirmation
+        * Level Select -> Quit game Confirmation
+        * Level Select <- Quit game Confirmation
+        * Level Select -> Level
+        * Level Select <- Level
+
+    * InGame
+        * Game -> Pause
+        * Game <- Pause
+        * Pause -> Save
+        * Pause <- Save
+        * Pause -> Load
+        * Pause <- Load
+        * Pause -> Settings
+        * Pause <- Settings
+        * Pause -> Exit Level Confirm
+        * Pause <- Exit Level Confirm
+        * Pause -> Quit Game Confirm
+        * Pause <- Quit Game Confirm
+
+
+enum ElementType
+{
+    Fire,
+    Earth,
+    Air,
+    Water
+};
+
+
+class BaseObject
+{
+    public:
+        void Attack(BaseObject* thing_to_attack)
+        {
+            thing_to_attack->Defend(m_iAttack, m_eElementType)
+        }
+        void Defend(int attack_damage, ElementType element_type)
+
+    private:
+        int m_iDefense;
+        int m_iAttack;
+        int m_iCurrentHealth;
+        int m_iTotalHealth
+        bool m_bVisible;
+        ElementType m_eElementType
+
+};
+
+
+// Read waves file
+#include <iostream>
+#include <boost/algorithm/string.hpp>
+std::vector<std::string> strs;
+
+std::vector<std::vector<int>> wave_list;
+std::vector<std::string> monster_index_for_wave;
+
+ifstream map_wave_file = 0;
+map_wave_file.open('location');
+// Each line is a wave with a monster index separated by a space
+if (map_wave_file.is_open())
+{
+    int z = 0;
+    while ( getline (map_wave_file,line) )
+    {
+        // Split on the space and stuff into container
+        boost::split(monster_index_for_wave, line, boost::is_any_of(" "));
+
+        int i = 0;
+        while( ! monster_index_for_wave.empty() )
+        {
+            wave_list[z][i] = to_int(monster_index_for_wave.back());
+            ++i;
+            monster_index_for_wave.pop_back();
+        }
+        z++;
+    }
+    map_wave_file.close();
+}
+else
+{
+    cout << "Unable to open file";
+}
+
+or
+// Print the properties of a tile.
+std::map< std::string, std::string > list = tile->GetProperties().GetList();
+std::map< std::string, std::string >::iterator iter;
+for (iter = list.begin(); iter != list.end(); ++iter) {
+        printf("%s = %s\n", iter->first.c_str(), iter->second.c_str());
+}
+
+// Read Save Files
+
+ifstream save_file;
+save_file.open('location');
+if (save_file.is_open())
+{
+    getline (map_wave_file,line)
+    levels_beaten = to_int(line);
+    talents = to_int(line);
+    riches = to_int(line);
+}
+else
+{
+    //error
+}
+
+
+
+
+save files:
+levelsbeaten
+talents
+riches
+
+monsters
+wave1
+wave2
+wavex monster indexs
+1 1 1
+would be three one monsters
+
+
+done fuck yeah!
+
+steps to game:
+draw map (once)
+update function // steps done
+spawn one tower, add tower to draw list // steps done
+spawn one minion, add to draw list //steps done
+make tower shoot minion // steps done
+give tower range // steps done
+make tower shoot targets closest to the exit or some such smart
+make minion die // Stubbed
+make minion run to goal // Stubbed
+make minion adhere to collision and find the best path // Stub
+give user tower spawn powers
+parse levelwave file // Done
+spawn monsters from level wave file
+implement money
+give user the ability to rush waves
+give wave previews
+implement pause screen // Stub
+Player camera to move around the map // http://forums.tigsource.com/index.php?topic=30011.0
+
+Add towers via index
+Add Monsters via index
+MemoryManagement Call that to create objects
+every possible Towerclass needs to have an image in the UI
+
+
+polish steps
+tower upgrades
+tower selling
+more monsters
+reward player with riches
+download Internet maps
+map maker
+
+
+
+// AKA Camera Class? REALLY FUCKING ROUGHT OUTLINE
+class Player : BaseMovingObject
+{
+    SDL_Rect* CursorLocation;
+    current_cursor;
+
+
+    DropTower()
+    {
+        m_bTowerSelected = false;
+        //get rid of cursor texture
+    }
+    PickUp()
+    {
+    }
+    HandleInput()
+    {
+        if( MOUSEBUTTONUP )
+        {
+            // Check if the user clicked the tower building interface
+            if( m_bTowerSelected )
+            {
+                if( TowerBuildCollsion() || RightClick() )
+                {
+                    // if tower is clicked over towerbuild ui drop it
+                    // Or rightclick is the button pressed
+                    DropTower();
+                }
+            }
+
+
+            if( TowerBuildCollsion() )
+            {
+                PickUpTower(x, y); // pickup tower at ui coordinates
+            }
+
+            // Check if the user clicked the next wave button
+            if( NextWaveCollision )
+            {
+                NextWaveEarly();
+            }
+
+            // Check if the user clicked the Pause button
+            if( PauseButton() )
+            {
+                Pause();
+            }
+        }
+        if( MOUSEWHEEL_UP )
+        {
+            // Zoom In
+        }
+        if( MOUSEWHEEL_DOWN )
+        {
+            // Zoom Out
+        }
+    }
+    Update()
+    {
+        // we only need the cursor if they have a tower selected
+        if( m_bTowerSelected )
+        {
+            GetMouseLocation(cursor_x, cursor_y);
+            texture = game->LoadImage(cursor);
+            SDL_Rect* location;
+
+            #include <math.h>       /* ceil */
+            tile_x == ceil(cursor_x/TILE_SIZE)
+            tile_y = ceil(cursor_y/TILE_SIZE)
+
+
+            map->[tile_x][tile_y].GetPosition(location->x, location->y)
+            location->h = TILE_SIZE;
+            location->w = TILE_SIZE;
+        }
+        // MoveCamera if the mouse is trying to move past the edge
+    }
+    Draw()
+    {
+        DrawCursor(game)
+    }
+    DrawCursor // we the map to be passed here for this
+    {
+        render current_cursor
+    }
+}
+
+class MapState
+
+    HandleInput
+    {
+        Player->HandleInput();
+    }
+
+    Player->Update();
+    Player->Draw();
+    UpdateTowers
+    {
+        if( m_vTowerList.empty())
+        {
+            m_vTowerList.push_back( new Tower(x, y) )
+        }
+        else
+        {
+            for(Tower* tower : m_vTowerList)
+            {
+                tower.Update(m_vMonsterList);
+            }
+        }
+    }
+
+    UpdateMonsters
+    {
+        if( m_vMonsterList.empty() )
+        {
+            // Spawns at spawn point
+            m_vTowerList.push_back( new Monster)
+        }
+        else
+        {
+            for(Monster* monster : m_vMonsterList)
+            {
+                monster.Update(collision);
+            }
+        }
+    }
+
+    DrawTowers
+    {
+        if( ! m_vTowerList.empty() )
+        {
+            for(Tower* tower : m_vTowerList)
+            {
+                tower.Draw();
+            }
+        }
+
+    }
+
+    DrawMonsters
+    {
+        if( ! m_vMonsterList.empty() )
+        {
+            for(Monster* monster : m_vMonsterList)
+            {
+                monster.Draw();
+            }
+        }
+    }
+
+    PauseGame(GameEngine* game)
+    {
+        game->PushState( PauseState::Instance() );
+    }
+
+    Pause(GameEngine* game)
+    {
+        // Will Require testing
+    }
+
+    Resume(GameEngine* game)
+    {
+        // Will Require testing
+    }
+}
+
+class Tower
+{
+    attack_radius = 3;
+    attack_cooldown = 1;
+    towerx = 1;
+    towery = 1;
+    attack_damage = 5;
+    element_type = Fire;
+    Update(std::vector monster_list)
+    {
+        if( ! cooling_down )
+        {
+            // Needs a loop that can have items taken from it
+            // but will not loop forever
+            for(Monster* monster : monster_list)
+            {
+                if((monster.x - towerx)^2 + (monster.y - towery)^2 < attack_radius^2 )
+                {
+                    if( Attack(monster) )
+                    {
+                        //remove this monster from list
+                    }
+                    break; // break out of the for loop
+                }
+            }
+        }
+        // Check if monster is in range
+        // if so we use an attack and use an animation for this
+    }
+    bool Attack(Monster* monster)
+    {
+        bool dead = false;
+        dead = monster.TakeDamage(attack_damage, element_type)
+        return dead;
+    }
+}
+
+class Monster
+{
+    Update(array for collision)
+    {
+        FindBestPath(array for collision);
+    }
+    TakeDamage()
+    {
+        // already written
+    }
+    Die()
+    {
+        // Death Animation Cleanup, etc
+    }
+    FindBestPath(array with collision)
+    {
+        // if not best path kill a tower and make one **
+        // Use A* to find the best path
+        // Move Toward Goal
+    }
+}
+
+rendercopy can scale images by giving a differnt source and destination sdl rect. big problem solved. this engine was the correct choice. F yeah.

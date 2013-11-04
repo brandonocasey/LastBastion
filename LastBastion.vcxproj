@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseClasses\BaseGameState.h" />
+    <ClInclude Include="BaseClasses\BaseMenu.h" />
+    <ClInclude Include="BaseClasses\BaseMonster.h" />
+    <ClInclude Include="BaseClasses\BaseMovingObject.h" />
+    <ClInclude Include="BaseClasses\BaseObject.h" />
+    <ClInclude Include="BaseClasses\BaseTower.h" />
+    <ClInclude Include="Classes\GameEngine.h" />
+    <ClInclude Include="Classes\GameLog.h" />
+    <ClInclude Include="Classes\MenuItem.h" />
+    <ClInclude Include="GameClasses\TestMonster.h" />
+    <ClInclude Include="GameClasses\TestTower.h" />
+    <ClInclude Include="HelperClasses\AnimationHelper.h" />
+    <ClInclude Include="HelperClasses\AssetLoader.h" />
+    <ClInclude Include="HelperClasses\AudioHelper.h" />
+    <ClInclude Include="HelperClasses\EventHelper.h" />
+    <ClInclude Include="HelperClasses\MemoryManager.h" />
+    <ClInclude Include="HelperClasses\RenderHelper.h" />
+    <ClInclude Include="HelperClasses\SaveGameHandler.h" />
+    <ClInclude Include="HelperClasses\Timer.h" />
+    <ClInclude Include="StateClasses\IntroState.h" />
+    <ClInclude Include="StateClasses\LevelSelectState.h" />
+    <ClInclude Include="StateClasses\LoadGame.h" />
+    <ClInclude Include="StateClasses\LoadGameState.h" />
+    <ClInclude Include="StateClasses\MainMenuState.h" />
+    <ClInclude Include="StateClasses\MapState.h" />
+    <ClInclude Include="StateClasses\NewGameState.h" />
+    <ClInclude Include="StateClasses\PauseState.h" />
+    <ClInclude Include="StateClasses\PopUpState.h" />
+    <ClInclude Include="StateClasses\SaveGameState.h" />
+    <ClInclude Include="StateClasses\SettingState.h" />
+    <ClInclude Include="StateClasses\ShopState.h" />
+    <ClInclude Include="StateClasses\StartState.h" />
+    <ClInclude Include="StateClasses\TalentState.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\GameEngine.cpp" />
+    <ClCompile Include="Classes\GameLog.cpp" />
+    <ClCompile Include="Classes\MenuItem.cpp" />
+    <ClCompile Include="HelperClasses\AudioHelper.cpp" />
+    <ClCompile Include="HelperClasses\RenderHelper.cpp" />
+    <ClCompile Include="HelperClasses\Timer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StateClasses\IntroState.cpp" />
+    <ClCompile Include="StateClasses\MainMenuState.cpp" />
+    <ClCompile Include="StateClasses\StartState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="TODO.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="GDD.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6633EB40-5A99-4189-9313-A1AA571F5864}</ProjectGuid>
+    <RootNamespace>LastBastion</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+      <AdditionalIncludeDirectories>E:\libs\SDL\include;E:\libs\boost_1_54_0;E:\libs\TMX\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\libs\SDL\lib;E:\libs\TMX\libs;E:\libs\boost_1_54_0\stage\lib</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>xcopy /y "$(ProjectDir)Assets\dlls\*.dll" "$(OutDir)"</Command>
+      <Message>Copy all of our dll files to the correct directory after build</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

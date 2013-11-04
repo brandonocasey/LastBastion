@@ -1,0 +1,6 @@
+class SettingsState
+{
+public:
+
+private:
+};

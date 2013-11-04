@@ -1,0 +1,32 @@
+﻿  main.cpp
+  StartState.cpp
+  MainMenuState.cpp
+  IntroState.cpp
+  Timer.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\helperclasses\timer.cpp(62): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+  RenderHelper.cpp
+  AudioHelper.cpp
+  MenuItem.cpp
+  GameLog.cpp
+  GameEngine.cpp
+  Generating Code...
+  LastBastion.vcxproj -> E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\Debug\LastBastion.exe
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libFLAC-8.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libfreetype-6.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libjpeg-9.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libmikmod-2.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libmodplug-1.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libogg-0.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libpng16-16.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libtiff-5.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libvorbis-0.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libvorbisfile-3.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libwebp-4.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_image.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_mixer.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_net.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_ttf.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\smpeg2.dll
+  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\zlib1.dll
+  18 File(s) copied
