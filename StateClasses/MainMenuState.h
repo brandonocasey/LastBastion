@@ -1,5 +1,7 @@
 #pragma once
 #include "../BaseClasses/BaseMenu.h"
+#include "../StateClasses/NewGameState.h"
+#include "../StateClasses/SettingsState.h"
 class MainMenuState : public BaseMenu
 {
 public:
@@ -36,5 +38,5 @@ protected:
 private:
     std::string m_sName;
     static MainMenuState m_MainMenuState;
-    GameLog *logger;
+    GameLog logger;
 };

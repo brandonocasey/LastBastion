@@ -11,16 +11,16 @@ AudioHelper* AudioHelper::GetAudioHelper(int channels, int chunksize, int freque
 void AudioHelper::Init(int channels, int chunksize, int frequency)
 {
     m_sName = "AudioHelper";
-    logger = logger->GetLogger(m_sName);
+    logger.Init(LOG_FILE, m_sName, LOG_LEVEL);
     m_iSoundVolume = MIX_MAX_VOLUME;
     m_iAllVolume = MIX_MAX_VOLUME;
     if( Mix_OpenAudio( frequency, MIX_DEFAULT_FORMAT, channels, chunksize ) == -1 )
     {
-        logger->LogSdlError( "Mix_OpenAudio" );
+        logger.LogSdlError( "Mix_OpenAudio" );
     }
     else
     {
-        logger->Log("AudioHelper Successfully initialized");
+        logger.Log("AudioHelper Successfully initialized");
     }
 }
 
@@ -44,18 +44,18 @@ void AudioHelper::SetMusicVolume(int level)
     // MIX_MAX_VOLUME == 128
     if( level > MIX_MAX_VOLUME )
     {
-        logger->Log("Setting music volume level to max volume " + std::to_string(MIX_MAX_VOLUME) + " because level of " + std::to_string(level) + " was over Max Volume");
+        logger.Log("Setting music volume level to max volume " + std::to_string(MIX_MAX_VOLUME) + " because level of " + std::to_string(level) + " was over Max Volume");
         level = MIX_MAX_VOLUME;
     }
 
     int min_volume = 0;
     if( level < min_volume )
     {
-        logger->Log("Setting music volume level to min_volume " + std::to_string(min_volume) + " because level of " + std::to_string(level) + " was under minimum Volume");
+        logger.Log("Setting music volume level to min_volume " + std::to_string(min_volume) + " because level of " + std::to_string(level) + " was under minimum Volume");
         level = MIX_MAX_VOLUME;
     }
 
-    logger->Log("Setting music volume level to " + std::to_string(level));
+    logger.Log("Setting music volume level to " + std::to_string(level));
     Mix_VolumeMusic(level);
     m_iMusicVolume = level;
 }
@@ -71,18 +71,18 @@ void AudioHelper::SetSoundVolume(int level)
     // MIX_MAX_VOLUME == 128
     if( level > MIX_MAX_VOLUME )
     {
-        logger->Log("Setting sound volume level to max volume " + std::to_string(MIX_MAX_VOLUME) + " because level of " + std::to_string(level) + " was over Max Volume");
+        logger.Log("Setting sound volume level to max volume " + std::to_string(MIX_MAX_VOLUME) + " because level of " + std::to_string(level) + " was over Max Volume");
         level = MIX_MAX_VOLUME;
     }
 
     int min_volume = 0;
     if( level < min_volume )
     {
-        logger->Log("Setting sound volume level to min_volume " + std::to_string(min_volume) + " because level of " + std::to_string(level) + " was under minimum Volume");
+        logger.Log("Setting sound volume level to min_volume " + std::to_string(min_volume) + " because level of " + std::to_string(level) + " was under minimum Volume");
         level = MIX_MAX_VOLUME;
     }
 
-    logger->Log("Setting sound volume level to " + std::to_string(level));
+    logger.Log("Setting sound volume level to " + std::to_string(level));
     m_iSoundVolume = level;
 }
 
@@ -95,14 +95,14 @@ void AudioHelper::SetAllVolume(int level)
 {
     if( level > MIX_MAX_VOLUME )
     {
-        logger->Log("Setting sound volume level to max volume " + std::to_string(MIX_MAX_VOLUME) + " because level of " + std::to_string(level) + " was over Max Volume");
+        logger.Log("Setting sound volume level to max volume " + std::to_string(MIX_MAX_VOLUME) + " because level of " + std::to_string(level) + " was over Max Volume");
         level = MIX_MAX_VOLUME;
     }
 
     int min_volume = 0;
     if( level < min_volume )
     {
-        logger->Log("Setting sound volume level to min_volume " + std::to_string(min_volume) + " because level of " + std::to_string(level) + " was under minimum Volume");
+        logger.Log("Setting sound volume level to min_volume " + std::to_string(min_volume) + " because level of " + std::to_string(level) + " was under minimum Volume");
         level = MIX_MAX_VOLUME;
     }
 
@@ -122,11 +122,11 @@ Mix_Music* AudioHelper::LoadMusic( std::string location )
 
     if( music == nullptr )
     {
-        logger->LogSdlError("Mix_LoadMUS");
+        logger.LogSdlError("Mix_LoadMUS");
     }
     else
     {
-        logger->Log("Successfully loaded sound");
+        logger.Log("Successfully loaded sound");
     }
 
     return music;
@@ -139,11 +139,11 @@ Mix_Chunk* AudioHelper::LoadSound( std::string location )
 
     if( sound == nullptr )
     {
-        logger->LogSdlError("Mix_LoadWAV");
+        logger.LogSdlError("Mix_LoadWAV");
     }
     else
     {
-        logger->Log("Successfully loaded sound at " + location);
+        logger.Log("Successfully loaded sound at " + location);
     }
 
     return sound;
@@ -178,7 +178,7 @@ void AudioHelper::PauseMusic()
     //If there is no music playing
     if( Mix_PlayingMusic() == 0 )
     {
-        logger->LogError("There is currently no music playing, but pause music called!");
+        logger.LogError("There is currently no music playing, but pause music called!");
     }
     //If music is being played
     else

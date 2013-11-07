@@ -1,16 +1,19 @@
 #pragma once
 
-#include "Classes/GameLog.h"    // The Log for our game
-#include "HelperClasses/Timer.h"
-#include <SDL2/SDL.h>           // SDL OpenGL Framework
-#include <SDL2/SDL_image.h>     // An SDL2 extension that enables different image formats
-#include <SDL2/SDL_mixer.h>     // An SDL2 Extension that enables different Audio Formats
-#include <SDL2/SDL_net.h>       // An SDL2 extension that enables easier network programming
-#include <SDL2/SDL_ttf.h>       // An SDL2 extension that enables fonts
-#include <iostream>             // cout, cin, etc
-#include <ostream>              // control what output stream to print to, an actual LOG file , STDOUT, etc
-#include <string>               // Enable string data types
-#include <vector>               // Enable Vectors
+#include "Classes/GameLog.h"        // The Log for our game
+#include "HelperClasses/Timer.h"    // For dealing with time
+#include <SDL2/SDL.h>               // SDL OpenGL Framework
+#include <SDL2/SDL_image.h>         // An SDL2 extension that enables different image formats
+#include <SDL2/SDL_mixer.h>         // An SDL2 Extension that enables different Audio Formats
+#include <SDL2/SDL_net.h>           // An SDL2 extension that enables easier network programming
+#include <SDL2/SDL_ttf.h>           // An SDL2 extension that enables fonts
+#include <iostream>                 // cout, cin, etc
+#include <ostream>                  // control what output stream to print to, an actual LOG file , STDOUT, etc
+#include <string>                   // Enable string data types
+#include <vector>                   // Enable Vectors
+#include <fstream>                  // Enable file write/write have to pass in flag ios::in | ios::out
+#include <boost/lexical_cast.hpp>   // std::string to int
+#include <hash_map>                 // Hashes nuff said
 
 // Map Loader
 // #include <TmxParser/Tmx.h>
@@ -41,6 +44,18 @@
 #define MUSIC_FOLDER "Assets/music/"
 #define SOUND_FOLDER "Assets/sounds/"
 #define MAPS_FOLDER "Assets/maps/"
+#define SAVE_FOLDER "Assets/saves"
 #define DEFAULT_FONT_FILE "Assets/fonts/SourceSansPro-Regular.ttf"
 const SDL_Color ColorWhite = {255, 255, 255, 255};
 const SDL_Color ColorBlack = {0, 0, 0, 255};
+
+
+enum ElementType
+{
+    None,
+    Fire,
+    Earth,
+    Air,
+    Water,
+    Metal
+};

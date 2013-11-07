@@ -2,9 +2,9 @@
 
 #include "../Utils.h"
 #include "../HelperClasses/AudioHelper.h"
-#include "../HelperClasses/EventHelper.h"
 #include "../HelperClasses/RenderHelper.h"
-#include "../HelperClasses/SaveGameHandler.h"
+#include "../HelperClasses/AssetLoader.h"
+class EventHelper;
 
 class BaseGameState; // Forward deceleration so that we can use GameEngines in Base Game States
 
@@ -37,12 +37,12 @@ public:
 
     AudioHelper* AudioHelper;
     RenderHelper* RenderHelper;
-    //EventHelper* EventHelper;
-    //SaveGameHandler* SaveHelper;
+    EventHelper* EventHelper;
+    AssetLoader* AssetLoader;
 
 private:
     std::string m_sName;
     std::vector<BaseGameState*> states;
-    GameLog *logger;
+    GameLog logger;
     bool m_bRunning;
 };

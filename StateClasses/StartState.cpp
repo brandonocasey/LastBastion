@@ -5,7 +5,7 @@ StartState StartState::m_StartState;
 void StartState::Init(GameEngine* game)
 {
     m_sName = "Start";
-    logger = logger->GetLogger(m_sName);
+    logger.Init(LOG_FILE, m_sName, LOG_LEVEL);
 }
 void StartState::Cleanup(GameEngine* game)
 {
@@ -29,7 +29,7 @@ void StartState::HandleEvents(GameEngine* game)
             // If they hit a key we change to the press start state
         case SDL_KEYDOWN:
         case SDL_MOUSEBUTTONDOWN:
-            logger->Log("User Has Pushed Start");
+            logger.Log("User Has Pushed Start");
             game->PushState( MainMenuState::Instance() );
             break;
         }

@@ -28,7 +28,8 @@ private:
     int FadeOut(int current_alpha);
     int FadeIn(int current_alpha);
 
-    GameLog *logger;
+    bool m_bSelected;
+    GameLog logger;
     std::string m_sText;
     SDL_Texture* m_CurrentTexture;
     bool m_bSelectable;

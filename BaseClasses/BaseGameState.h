@@ -14,8 +14,16 @@ public:
     virtual void Update(GameEngine* game) = 0;
     virtual void Draw(GameEngine* game) = 0;
 
-    virtual std::string GetName() = 0;
+    std::string GetName()
+    {
+        if( m_sName.empty() )
+        {
+            m_sName = "Unset";
+        }
+        return m_sName;
+    }
 
 protected:
+    std::string m_sName;
     BaseGameState() { } // Constructor
 };

@@ -20,14 +20,17 @@
     <ClInclude Include="Classes\GameEngine.h" />
     <ClInclude Include="Classes\GameLog.h" />
     <ClInclude Include="Classes\MenuItem.h" />
+    <ClInclude Include="GameClasses\Player.h" />
     <ClInclude Include="GameClasses\TestMonster.h" />
     <ClInclude Include="GameClasses\TestTower.h" />
+    <ClInclude Include="GameClasses\TileSet.h" />
     <ClInclude Include="HelperClasses\AnimationHelper.h" />
     <ClInclude Include="HelperClasses\AssetLoader.h" />
     <ClInclude Include="HelperClasses\AudioHelper.h" />
     <ClInclude Include="HelperClasses\EventHelper.h" />
     <ClInclude Include="HelperClasses\MemoryManager.h" />
     <ClInclude Include="HelperClasses\RenderHelper.h" />
+    <ClInclude Include="HelperClasses\SaveGame.h" />
     <ClInclude Include="HelperClasses\SaveGameHandler.h" />
     <ClInclude Include="HelperClasses\Timer.h" />
     <ClInclude Include="StateClasses\IntroState.h" />
@@ -37,10 +40,10 @@
     <ClInclude Include="StateClasses\MainMenuState.h" />
     <ClInclude Include="StateClasses\MapState.h" />
     <ClInclude Include="StateClasses\NewGameState.h" />
-    <ClInclude Include="StateClasses\PauseState.h" />
+    <ClInclude Include="StateClasses\PauseGameState.h" />
     <ClInclude Include="StateClasses\PopUpState.h" />
     <ClInclude Include="StateClasses\SaveGameState.h" />
-    <ClInclude Include="StateClasses\SettingState.h" />
+    <ClInclude Include="StateClasses\SettingsState.h" />
     <ClInclude Include="StateClasses\ShopState.h" />
     <ClInclude Include="StateClasses\StartState.h" />
     <ClInclude Include="StateClasses\TalentState.h" />
@@ -50,13 +53,27 @@
     <ClCompile Include="Classes\GameEngine.cpp" />
     <ClCompile Include="Classes\GameLog.cpp" />
     <ClCompile Include="Classes\MenuItem.cpp" />
+    <ClCompile Include="GameClasses\TileSet.cpp" />
+    <ClCompile Include="HelperClasses\AssetLoader.cpp" />
     <ClCompile Include="HelperClasses\AudioHelper.cpp" />
+    <ClCompile Include="HelperClasses\EventHelper.cpp" />
     <ClCompile Include="HelperClasses\RenderHelper.cpp" />
+    <ClCompile Include="HelperClasses\SaveGame.cpp" />
     <ClCompile Include="HelperClasses\Timer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StateClasses\IntroState.cpp" />
+    <ClCompile Include="StateClasses\LevelSelectState.cpp" />
+    <ClCompile Include="StateClasses\LoadGameState.cpp" />
     <ClCompile Include="StateClasses\MainMenuState.cpp" />
+    <ClCompile Include="StateClasses\MapState.cpp" />
+    <ClCompile Include="StateClasses\NewGameState.cpp" />
+    <ClCompile Include="StateClasses\PauseGameState.cpp" />
+    <ClCompile Include="StateClasses\PopUpState.cpp" />
+    <ClCompile Include="StateClasses\SaveGameState.cpp" />
+    <ClCompile Include="StateClasses\SettingsState.cpp" />
+    <ClCompile Include="StateClasses\ShopState.cpp" />
     <ClCompile Include="StateClasses\StartState.cpp" />
+    <ClCompile Include="StateClasses\TalentState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -66,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="GDD.txt" />
+    <Text Include="MoreDetailedMapState.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6633EB40-5A99-4189-9313-A1AA571F5864}</ProjectGuid>

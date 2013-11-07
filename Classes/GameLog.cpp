@@ -1,8 +1,5 @@
 #include "GameLog.h"
 
-// Singleton Yeah!
-GameLog GameLog::m_GameLog;
-
 /**
 * Initialize the game log, usually done in the game Engine itself
 * @param  os        the log file handler to print to
@@ -10,13 +7,11 @@ GameLog GameLog::m_GameLog;
 * @param  log_level the level of logging we are currently doing
 * @return           Returns an instance of GameLog
 */
-GameLog* GameLog::Init(std::ostream &os, std::string &caller, int log_level)
+void GameLog::Init(std::ostream &os, std::string &caller, int log_level)
 {
-    m_GameLog.SetCaller(caller);
-    m_GameLog.SetLogLevel(log_level);
-    m_GameLog.SetLogFile(os);
-
-    return &m_GameLog;
+    m_sLogCaller = caller;
+    m_cLogFile = &os;
+    m_iLogLevel = log_level;
 }
 
 /**
@@ -58,7 +53,7 @@ void GameLog::LogSdlError(const std::string &function_name)
 
 /**
 * The Caller that we want logger to report
-* @param caller The name of the caller that logger will log wth
+* @param caller The name of the caller that logger will log
 */
 void GameLog::SetCaller(std::string &caller)
 {

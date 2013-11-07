@@ -1,5 +1,4 @@
 #pragma once
-
 /**
 * @file MapState
 * Required Features:
@@ -12,31 +11,57 @@
 * Needs to maintain a current collision array
 *
 */
+#include "../GameClasses/TestTower.h"
+#include "../GameClasses/TestMonster.h"
+#include "../GameClasses/TileSet.h"
+#include "../Utils.h"
+#include "../Classes/GameEngine.h"
+#include "../BaseClasses/BaseGameState.h"
+
+
+#include "../StateClasses/PauseGameState.h"
 
 class MapState : BaseGameState
 {
 public:
-    virtual void Init(GameEngine* game) = 0;
-    virtual void Cleanup(GameEngine* game) = 0;
-
-    virtual void PauseState(GameEngine* game) = 0;
-    virtual void ResumeState(GameEngine* game) = 0;
-
-    virtual void HandleEvents(GameEngine* game) = 0;
-    virtual void Update(GameEngine* game) = 0;
-    virtual void Draw(GameEngine* game) = 0;
+    void Init(GameEngine* game);
+    void Cleanup(GameEngine* game);
+    void PauseState(GameEngine* game);
+    void ResumeState(GameEngine* game);
+    void HandleEvents(GameEngine* game);
+    void Update(GameEngine* game);
+    void Draw(GameEngine* game);
+    void LoadMap(GameEngine* game);
+    void LoadCollision(GameEngine* game, int map_height_tiles, int map_width_tiles);
 
     void PauseGameplay(GameEngine* game);
     void DrawMap(GameEngine* game);
+    void DrawTile(GameEngine* game);
     void DrawMonsters(GameEngine* game);
     void DrawTowers(GameEngine* game);
     void DrawPlayer(GameEngine* game);
-    void LoadMap(GameEngine* game);
+
+    void UpdateMonsters();
+    void UpdateTowers();
+
+    static MapState* Instance()
+    {
+        return &m_MapState;
+    }
+    std::string GetName()
+    {
+        if( m_sName.empty() )
+        {
+            m_sName = "Unknown";
+        }
+        return m_sName;
+    }
 
 private:
-    std::vector m_vMonsterList;
-    std::vector m_vTowerList;
-    int* collision;
-    MapState();
-    ~MapState();
+
+    static MapState m_MapState;
+    std::vector<TestTower*> m_vMonsterList;
+    std::vector<TestMonster*> m_vTowerList;
+    std::vector< std::vector<int> > m_vviCollision;
+    std::hash_map<int, TileSet*> m_hTileSet;
 };

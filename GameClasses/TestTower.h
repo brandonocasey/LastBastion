@@ -1,8 +1,6 @@
+#pragma once
+#include "../BaseClasses/BaseTower.h"
+
 class TestTower : BaseTower
 {
-public:
-    TestTower(arguments);
-    ~TestTower();
-
-    /* data */
 };

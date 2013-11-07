@@ -1,0 +1,56 @@
+DRAW()
+
+-- Draw Map Graphics Layers
+    - Loop through our maps graphics layer
+-- Draw Tower Graphics
+    - Call Draw to have each tower draw itself
+-- Draw Monster Graphics
+    - Call Draw to have each monster draw themselves
+-- Draw Player Graphics
+    - Current Cursor
+    - UI
+
+
+-- Handle Player Events
+    -- if mouse is clicked and current state is building tower build tower
+    -- if mouse is clicked on tower, select it
+    -- if mouse is cicked on ui do something
+    -- else nothing
+
+
+UPDATE()
+
+-- UpdateTowerCollision
+    -- Loop through towers and update collision accordingly through array pointer
+    -- Should all be done through towers update functions
+
+-- UpdateMonsterLocations
+    -- Loop through Monsters and update position based on collision
+    -- Monster update functions
+
+-- Update CursorPosition
+    -- Update where the players cursor should draw
+
+-- Update UI state
+
+
+
+INIT()
+
+-- Load Tiles Used by TileSet, Should include location graphics
+
+-- Load Collision Layer
+
+-- Load Objectives Layer
+    - End
+    - Start
+        - Waves
+    _ Waypoints
+
+-- Load Player Assets
+    - UI
+    - Cursor
+-- Load Monster Assets
+    - Sprites
+-- Load Tower Assets
+    - Sprites

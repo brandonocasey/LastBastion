@@ -37,7 +37,7 @@ public:
     static RenderHelper* GetRenderHelper(const char* title, int width, int height, bool fullscreen);
 private:
     static RenderHelper m_RenderHelper;
-    GameLog* logger;
+    GameLog logger;
     std::string m_sName;
     SDL_Renderer* m_cRenderer;
     SDL_Window* m_cWindow;

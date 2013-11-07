@@ -1,32 +1,460 @@
 ﻿  main.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
   StartState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+  SaveGameState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+  PopUpState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\popupstate.cpp(4): error C2511: 'void PopUpState::Init(std::string,std::string,std::string,boost::function<Signature>)' : overloaded member function not found in 'PopUpState'
+          with
+          [
+              Signature=void (GameEngine *)
+          ]
+          e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\popupstate.h(12) : see declaration of 'PopUpState'
+  PauseState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(32): error C2653: 'SaveGame' : is not a class or namespace name
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(32): error C3861: 'Instance': identifier not found
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2653: 'PauseState' : is not a class or namespace name
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2276: '&' : illegal operation on bound member function expression
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<_bi::dm_result<MT::* ,A1>::type,boost::_mfi::dm<M,T>,_bi::list_av_1<A1>::type> boost::bind(M T::* ,A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1728) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf8<R,T,B1,B2,B3,B4,B5,B6,B7,B8>,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7,B8) const,A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 11 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(223) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf8<R,T,B1,B2,B3,B4,B5,B6,B7,B8>,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7,B8),A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 11 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(212) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf7<R,T,B1,B2,B3,B4,B5,B6,B7>,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7) const,A1,A2,A3,A4,A5,A6,A7,A8)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(199) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf7<R,T,B1,B2,B3,B4,B5,B6,B7>,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7),A1,A2,A3,A4,A5,A6,A7,A8)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(188) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf6<R,T,B1,B2,B3,B4,B5,B6>,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6) const,A1,A2,A3,A4,A5,A6,A7)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(175) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf6<R,T,B1,B2,B3,B4,B5,B6>,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6),A1,A2,A3,A4,A5,A6,A7)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(164) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf5<R,T,B1,B2,B3,B4,B5>,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5) const,A1,A2,A3,A4,A5,A6)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(151) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf5<R,T,B1,B2,B3,B4,B5>,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5),A1,A2,A3,A4,A5,A6)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(140) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf4<R,T,B1,B2,B3,B4>,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4) const,A1,A2,A3,A4,A5)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(127) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf4<R,T,B1,B2,B3,B4>,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4),A1,A2,A3,A4,A5)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(116) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf3<R,T,B1,B2,B3>,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3) const,A1,A2,A3,A4)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(103) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf3<R,T,B1,B2,B3>,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3),A1,A2,A3,A4)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(92) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf2<R,T,B1,B2>,_bi::list_av_3<A1,A2,A3>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2) const,A1,A2,A3)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(79) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf2<R,T,B1,B2>,_bi::list_av_3<A1,A2,A3>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2),A1,A2,A3)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(68) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf1<R,T,B1>,_bi::list_av_2<A1,A2>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1) const,A1,A2)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(55) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf1<R,T,B1>,_bi::list_av_2<A1,A2>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1),A1,A2)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(44) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf8<R,T,A1,A2,A3,A4,A5,A6,A7,A8>,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7,B8) const,A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(222) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf8<R,T,A1,A2,A3,A4,A5,A6,A7,A8>,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7,B8),A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(211) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf7<R,T,A1,A2,A3,A4,A5,A6,A7>,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7) const,A1,A2,A3,A4,A5,A6,A7,A8)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(198) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf7<R,T,A1,A2,A3,A4,A5,A6,A7>,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7),A1,A2,A3,A4,A5,A6,A7,A8)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(187) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf6<R,T,A1,A2,A3,A4,A5,A6>,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5,B6) const,A1,A2,A3,A4,A5,A6,A7)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(174) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf6<R,T,A1,A2,A3,A4,A5,A6>,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5,B6),A1,A2,A3,A4,A5,A6,A7)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(163) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf5<R,T,A1,A2,A3,A4,A5>,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5) const,A1,A2,A3,A4,A5,A6)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(150) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf5<R,T,A1,A2,A3,A4,A5>,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4,B5),A1,A2,A3,A4,A5,A6)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(139) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf4<R,T,A1,A2,A3,A4>,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4) const,A1,A2,A3,A4,A5)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(126) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf4<R,T,A1,A2,A3,A4>,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3,B4),A1,A2,A3,A4,A5)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(115) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf3<R,T,A1,A2,A3>,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3) const,A1,A2,A3,A4)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(102) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf3<R,T,A1,A2,A3>,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(R (__thiscall T::* )(B1,B2,B3),A1,A2,A3,A4)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(91) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf2<R,T,A1,A2>,_bi::list_av_3<A1,A2,A3>::type> boost::bind(R (__thiscall T::* )(B1,B2) const,A1,A2,A3)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(78) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf2<R,T,A1,A2>,_bi::list_av_3<A1,A2,A3>::type> boost::bind(R (__thiscall T::* )(B1,B2),A1,A2,A3)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(67) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::cmf0<R,T>,_bi::list_av_1<A1>::type> boost::bind(R (__thiscall T::* )(void) const,A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(30) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,boost::_mfi::mf0<R,T>,_bi::list_av_1<A1>::type> boost::bind(R (__thiscall T::* )(void),A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf_cc.hpp(20) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3,B4,B5,B6,B7,B8,B9),_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(R (__cdecl *)(B1,B2,B3,B4,B5,B6,B7,B8,B9),A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(112) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3,B4,B5,B6,B7,B8),_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(R (__cdecl *)(B1,B2,B3,B4,B5,B6,B7,B8),A1,A2,A3,A4,A5,A6,A7,A8)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(101) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3,B4,B5,B6,B7),_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(R (__cdecl *)(B1,B2,B3,B4,B5,B6,B7),A1,A2,A3,A4,A5,A6,A7)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(90) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3,B4,B5,B6),_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(R (__cdecl *)(B1,B2,B3,B4,B5,B6),A1,A2,A3,A4,A5,A6)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(79) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3,B4,B5),_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(R (__cdecl *)(B1,B2,B3,B4,B5),A1,A2,A3,A4,A5)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(68) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3,B4),_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(R (__cdecl *)(B1,B2,B3,B4),A1,A2,A3,A4)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(57) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1,B2,B3),_bi::list_av_3<A1,A2,A3>::type> boost::bind(R (__cdecl *)(B1,B2,B3),A1,A2,A3)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(46) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(B1),_bi::list_av_1<A1>::type> boost::bind(R (__cdecl *)(B1),A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(26) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,R(__cdecl *)(void),boost::_bi::list0> boost::bind(R (__cdecl *)(void))' : expects 1 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_cc.hpp(17) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(F,A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1536) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(F,A1,A2,A3,A4,A5,A6,A7,A8)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1528) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(F,A1,A2,A3,A4,A5,A6,A7)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1520) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(F,A1,A2,A3,A4,A5,A6)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1512) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(F,A1,A2,A3,A4,A5)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1504) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(F,A1,A2,A3,A4)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1496) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_3<A1,A2,A3>::type> boost::bind(F,A1,A2,A3)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1488) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,_bi::list_av_1<A1>::type> boost::bind(F,A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1472) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<boost::_bi::unspecified,F,boost::_bi::list0> boost::bind(F)' : expects 1 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1464) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(boost::type<T>,F,A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 11 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1452) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(boost::type<T>,F,A1,A2,A3,A4,A5,A6,A7,A8)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1444) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(boost::type<T>,F,A1,A2,A3,A4,A5,A6,A7)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1436) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(boost::type<T>,F,A1,A2,A3,A4,A5,A6)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1428) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(boost::type<T>,F,A1,A2,A3,A4,A5)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1420) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(boost::type<T>,F,A1,A2,A3,A4)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1412) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_3<A1,A2,A3>::type> boost::bind(boost::type<T>,F,A1,A2,A3)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1404) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_2<A1,A2>::type> boost::bind(boost::type<T>,F,A1,A2)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1396) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,boost::_bi::list0> boost::bind(boost::type<T>,F)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1380) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(F,A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1370) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(F,A1,A2,A3,A4,A5,A6,A7,A8)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1362) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(F,A1,A2,A3,A4,A5,A6,A7)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1354) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(F,A1,A2,A3,A4,A5,A6)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1346) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(F,A1,A2,A3,A4,A5)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1338) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(F,A1,A2,A3,A4)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1330) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_3<A1,A2,A3>::type> boost::bind(F,A1,A2,A3)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1322) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,_bi::list_av_1<A1>::type> boost::bind(F,A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1306) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(52): error C2780: 'boost::_bi::bind_t<R,F,boost::_bi::list0> boost::bind(F)' : expects 1 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1298) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2653: 'PauseState' : is not a class or namespace name
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2276: '&' : illegal operation on bound member function expression
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<_bi::dm_result<MT::* ,A1>::type,boost::_mfi::dm<M,T>,_bi::list_av_1<A1>::type> boost::bind(M T::* ,A1)' : expects 2 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind.hpp(1728) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf8<R,T,B1,B2,B3,B4,B5,B6,B7,B8>,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7,B8) const,A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 11 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(223) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf8<R,T,B1,B2,B3,B4,B5,B6,B7,B8>,_bi::list_av_9<A1,A2,A3,A4,A5,A6,A7,A8,A9>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7,B8),A1,A2,A3,A4,A5,A6,A7,A8,A9)' : expects 11 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(212) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf7<R,T,B1,B2,B3,B4,B5,B6,B7>,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7) const,A1,A2,A3,A4,A5,A6,A7,A8)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(199) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf7<R,T,B1,B2,B3,B4,B5,B6,B7>,_bi::list_av_8<A1,A2,A3,A4,A5,A6,A7,A8>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6,B7),A1,A2,A3,A4,A5,A6,A7,A8)' : expects 10 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(188) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf6<R,T,B1,B2,B3,B4,B5,B6>,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6) const,A1,A2,A3,A4,A5,A6,A7)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(175) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf6<R,T,B1,B2,B3,B4,B5,B6>,_bi::list_av_7<A1,A2,A3,A4,A5,A6,A7>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5,B6),A1,A2,A3,A4,A5,A6,A7)' : expects 9 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(164) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf5<R,T,B1,B2,B3,B4,B5>,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5) const,A1,A2,A3,A4,A5,A6)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(151) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf5<R,T,B1,B2,B3,B4,B5>,_bi::list_av_6<A1,A2,A3,A4,A5,A6>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4,B5),A1,A2,A3,A4,A5,A6)' : expects 8 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(140) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf4<R,T,B1,B2,B3,B4>,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4) const,A1,A2,A3,A4,A5)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(127) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf4<R,T,B1,B2,B3,B4>,_bi::list_av_5<A1,A2,A3,A4,A5>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3,B4),A1,A2,A3,A4,A5)' : expects 7 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(116) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf3<R,T,B1,B2,B3>,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3) const,A1,A2,A3,A4)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(103) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf3<R,T,B1,B2,B3>,_bi::list_av_4<A1,A2,A3,A4>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2,B3),A1,A2,A3,A4)' : expects 6 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(92) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf2<R,T,B1,B2>,_bi::list_av_3<A1,A2,A3>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2) const,A1,A2,A3)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(79) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::mf2<R,T,B1,B2>,_bi::list_av_3<A1,A2,A3>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1,B2),A1,A2,A3)' : expects 5 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(68) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): error C2780: 'boost::_bi::bind_t<Rt2,boost::_mfi::cmf1<R,T,B1>,_bi::list_av_2<A1,A2>::type> boost::bind(boost::type<T>,R (__thiscall T::* )(B1) const,A1,A2)' : expects 4 arguments - 3 provided
+          e:\libs\boost_1_54_0\boost\bind\bind_mf2_cc.hpp(55) : see declaration of 'boost::bind'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\pausestate.cpp(53): fatal error C1003: error count exceeds 100; stopping compilation
+  NewGameState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\newgamestate.cpp(29): error C2086: 'SDL_Event event' : redefinition
+          e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\newgamestate.cpp(27) : see declaration of 'event'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\newgamestate.cpp(46): error C3861: 'BackackCallback': identifier not found
+  MapState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S2': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S3': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(7): error C2065: 'm_cMap' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(74): error C2039: 'LoadCollision' : is not a member of 'MapState'
+          e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.h(21) : see declaration of 'MapState'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(76): error C2065: 'm_vviCollision' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(76): error C2228: left of '.resize' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(77): error C2065: 'm_vviCollision' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(77): error C2228: left of '.size' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(79): error C2065: 'm_vviCollision' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(79): error C2228: left of '.resize' must have class/struct/union
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(116): error C3861: 'UpdateTowers': identifier not found
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(118): error C3861: 'UpdateMonsters': identifier not found
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(130): error C2653: 'PauseState' : is not a class or namespace name
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(134): error C2065: 'logger' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(134): error C2227: left of '->Log' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(135): error C2065: 'm_cMap' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(135): error C2227: left of '->GetNumLayers' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(137): error C2653: 'Tmx' : is not a class or namespace name
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(137): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(137): error C2143: syntax error : missing ';' before '*'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(137): error C2065: 'layer' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(137): error C2065: 'm_cMap' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(137): error C2227: left of '->GetLayer' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(139): error C2065: 'layer' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(139): error C2227: left of '->GetHeight' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(141): error C2065: 'layer' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(141): error C2227: left of '->GetWidth' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(143): error C2065: 'layer' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(143): error C2227: left of '->GetTile' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(143): error C2228: left of '.tilesetId' must have class/struct/union
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(145): error C2065: 'layer' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(145): error C2227: left of '->GetTileId' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(146): error C2660: 'TileSet::DrawTile' : function does not take 1 arguments
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(160): error C2065: 'Monster' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(160): error C2065: 'monster' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(160): error C2143: syntax error : missing ';' before ':'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(160): error C2143: syntax error : missing ')' before ':'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(160): error C2059: syntax error : ')'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(161): error C2143: syntax error : missing ';' before '{'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(162): error C2065: 'monster' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(162): error C2228: left of '.Draw' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(170): error C2065: 'Tower' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(170): error C2065: 'tower' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(170): error C2143: syntax error : missing ';' before ':'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(170): error C2143: syntax error : missing ')' before ':'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(170): error C2059: syntax error : ')'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(171): error C2143: syntax error : missing ';' before '{'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(172): error C2065: 'tower' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(172): error C2228: left of '.Draw' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(180): error C2039: 'UpdateMonsters' : is not a member of 'MapState'
+          e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.h(21) : see declaration of 'MapState'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(182): error C2065: 'm_vMonsterList' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(182): error C2228: left of '.empty' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(185): error C2065: 'm_vTowerList' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(185): error C2228: left of '.push_back' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(185): error C2061: syntax error : identifier 'Monster'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(189): error C2065: 'Monster' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(189): error C2065: 'monster' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(189): error C2143: syntax error : missing ';' before ':'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(189): error C2143: syntax error : missing ')' before ':'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(189): error C2059: syntax error : ')'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(190): error C2143: syntax error : missing ';' before '{'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(191): error C2065: 'monster' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(191): error C2228: left of '.Update' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(191): error C2065: 'm_vviCollision' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(196): error C2039: 'UpdateTowers' : is not a member of 'MapState'
+          e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.h(21) : see declaration of 'MapState'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(198): error C2065: 'm_vTowerList' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(198): error C2228: left of '.empty' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(200): error C2065: 'm_vTowerList' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(200): error C2228: left of '.push_back' must have class/struct/union
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(200): error C2661: 'TestTower::TestTower' : no overloaded function takes 2 arguments
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(201): error C2143: syntax error : missing ';' before '}'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(204): error C2065: 'm_vTowerList' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(205): error C3312: no callable 'begin' function found for type ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(205): error C3312: no callable 'end' function found for type ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(206): error C2065: 'tower' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(206): error C2227: left of '->Update' must point to class/struct/union/generic type
+          type is ''unknown-type''
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\mapstate.cpp(206): error C2065: 'm_vMonsterList' : undeclared identifier
   MainMenuState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+  LoadGameState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\loadgamestate.cpp(30): error C2039: 'LoadGameCallback' : is not a member of 'LoadGameState'
+          e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\loadgamestate.h(7) : see declaration of 'LoadGameState'
+  LevelSelectState.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\levelselectstate.cpp(11): error C2451: conditional expression of type 'void' is illegal
+          Expressions of type void cannot be converted to other types
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\levelselectstate.cpp(38): error C2653: 'MainMenu' : is not a class or namespace name
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\levelselectstate.cpp(42): error C2065: 'MAP_FOLDER' : undeclared identifier
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\stateclasses\levelselectstate.cpp(44): error C2243: 'type cast' : conversion from 'MapState *' to 'BaseGameState *' exists, but is inaccessible
   IntroState.cpp
-  Timer.cpp
-e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\helperclasses\timer.cpp(62): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
-  RenderHelper.cpp
-  AudioHelper.cpp
-  MenuItem.cpp
-  GameLog.cpp
-  GameEngine.cpp
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(14): error C2955: 'std::vector' : use of class template requires template argument list
+          d:\program files (x86)\microsoft visual studio 11.0\vc\include\vector(655) : see declaration of 'std::vector'
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::begin' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2663: 'std::vector<_Ty,_Alloc>::end' : 2 overloads have no legal conversion for 'this' pointer
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S8': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C3536: '$S9': cannot be used before it is initialized
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2100: illegal indirection
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(20): error C2440: 'initializing' : cannot convert from 'int' to 'BaseMonster *'
+          Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.x' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(23): error C2228: left of '.y' must have class/struct/union
+          type is 'BaseMonster *'
+          did you intend to use '->' instead?
+e:\libraries\cloud storage\dropbox\school\14 - fall 2013\video game production project\lastbastion\lastbastion\baseclasses\basetower.h(43): error C2143: syntax error : missing ';' before 'return'
   Generating Code...
-  LastBastion.vcxproj -> E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\Debug\LastBastion.exe
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libFLAC-8.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libfreetype-6.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libjpeg-9.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libmikmod-2.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libmodplug-1.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libogg-0.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libpng16-16.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libtiff-5.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libvorbis-0.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libvorbisfile-3.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\libwebp-4.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_image.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_mixer.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_net.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\SDL2_ttf.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\smpeg2.dll
-  E:\Libraries\Cloud Storage\Dropbox\School\14 - Fall 2013\Video Game Production Project\LastBastion\LastBastion\Assets\dlls\zlib1.dll
-  18 File(s) copied

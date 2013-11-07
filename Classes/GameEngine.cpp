@@ -1,5 +1,6 @@
 #include "GameEngine.h"
 #include "../BaseClasses/BaseGameState.h" // This is included here so that we can use it in both files
+#include "../HelperClasses/EventHelper.h" // Breaks the damn circle dependency
 
 /**
 * This function initializes the game engine
@@ -14,29 +15,26 @@ int GameEngine::Init(const char* title, int width = 640, int height = 640, bool 
     // Spin up our logger for debugging
     m_sName = "GameEngine";
 
-    logger = logger->Init(LOG_FILE, m_sName, LOG_LEVEL);
+    logger.Init(LOG_FILE, m_sName, LOG_LEVEL);
 
     // Initialize our SDL Session
     if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
     {
-        logger->LogSdlError( "SDL_Init: " );
+        logger.LogSdlError( "SDL_Init: " );
         return 1;
     }
     else
     {
-        logger->Log("SDL_Init: SDL_Init_Everything work OK");
+        logger.Log("SDL_Init: SDL_Init_Everything work OK");
     }
 
     // Get Some Helpful Classes
 
     // Error Handling, needed badly
-    //AudioHelper = AudioHelper->GetAudioHelper();
-    //EventHelper = EventHelper->GetEventHelper();
+    AudioHelper = AudioHelper->GetAudioHelper();
+    EventHelper->Init(this);
     RenderHelper = RenderHelper->GetRenderHelper(title, width, height, fullscreen);
     //SaveHelper = SaveHelper->GetSaveHelper();
-
-    // This should be in EventHandler, but right now we don't have much use for it.
-    SDL_ShowCursor(1);
 
     // Now We are ready to run
     m_bRunning = true;
@@ -50,10 +48,10 @@ int GameEngine::Init(const char* title, int width = 640, int height = 640, bool 
 */
 void GameEngine::Cleanup()
 {
-    logger->Log("Attempting to cleanup all of the things in GameEngine");
+    logger.Log("Attempting to cleanup all of the things in GameEngine");
     while( ! states.empty() )
     {
-        logger->Log("Calling Cleanup function for " + states.back()->GetName());
+        logger.Log("Calling Cleanup function for " + states.back()->GetName());
         states.back()->Cleanup(this);
         states.pop_back();
     }
@@ -80,7 +78,7 @@ void GameEngine::ChangeState(BaseGameState* state)
 
     states.push_back( state );
     states.back()->Init(this);
-    logger->Log("Changing State to " + state->GetName());
+    logger.Log("Changing State to " + state->GetName());
 }
 
 /**
@@ -98,7 +96,7 @@ void GameEngine::PushState(BaseGameState* state)
     // store and init the new state
     states.push_back(state);
     states.back()->Init(this);
-    logger->Log("Pushing a new State " + state->GetName());
+    logger.Log("Pushing a new State " + state->GetName());
 }
 
 /**
@@ -120,9 +118,9 @@ void GameEngine::PopState()
     }
     else
     {
-        logger->LogError("Attempted to pop off a state when there are none");
+        logger.LogError("Attempted to pop off a state when there are none");
     }
-    logger->Log("Getting rid of the current state" + states.back()->GetName() );
+    logger.Log("Getting rid of the current state" + states.back()->GetName() );
 }
 
 /**
@@ -172,7 +170,7 @@ bool GameEngine::Running()
 */
 void GameEngine::Quit()
 {
-    logger->Log("Quit has been called");
+    logger.Log("Quit has been called");
     m_bRunning = false;
 }
 

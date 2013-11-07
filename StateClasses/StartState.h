@@ -36,5 +36,5 @@ private:
     Timer* m_cImageTimer;
     static StartState m_StartState;
     SDL_Texture* m_cCurrentText;
-    GameLog *logger;
+    GameLog logger;
 };

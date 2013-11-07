@@ -1,6 +1,0 @@
-class SettingsState
-{
-public:
-
-private:
-};

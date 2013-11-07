@@ -5,8 +5,13 @@
 #include <SDL2/SDL.h>
 class GameLog
 {
+private:
+    std::ostream* m_cLogFile;
+    int m_iLogLevel;
+    std::string m_sLogCaller;
+
 public:
-    static GameLog* Init(std::ostream &os, std::string &caller, int log_level);
+    void Init(std::ostream &os, std::string &caller, int log_level);
     void Log(const std::string &msg, int log_level = 5);
     void LogError(const std::string &msg);
     void LogSdlError(const std::string &function_name);
@@ -18,19 +23,4 @@ public:
 
     int GetLogLevel();
     std::string GetCaller();
-
-    static GameLog* GetLogger(std::string &caller)
-    {
-        m_GameLog.SetCaller(caller);
-        return &m_GameLog;
-    }
-
-protected:
-    GameLog() { }
-
-private:
-    static GameLog m_GameLog;
-    std::ostream* m_cLogFile;
-    int m_iLogLevel;
-    std::string m_sLogCaller;
 };

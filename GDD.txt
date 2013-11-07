@@ -315,7 +315,7 @@ would be three one monsters
 done fuck yeah!
 
 steps to game:
-draw map (once)
+draw map
 update function // steps done
 spawn one tower, add tower to draw list // steps done
 spawn one minion, add to draw list //steps done
@@ -331,7 +331,7 @@ spawn monsters from level wave file
 implement money
 give user the ability to rush waves
 give wave previews
-implement pause screen // Stub
+implement pause screen // done
 Player camera to move around the map // http://forums.tigsource.com/index.php?topic=30011.0
 
 Add towers via index
@@ -574,5 +574,3 @@ class Monster
         // Move Toward Goal
     }
 }
-
-rendercopy can scale images by giving a differnt source and destination sdl rect. big problem solved. this engine was the correct choice. F yeah.

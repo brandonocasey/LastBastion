@@ -10,7 +10,7 @@ IntroState IntroState::m_IntroState;
 void IntroState::Init(GameEngine* game)
 {
     m_sName = "Intro";
-    logger = logger->GetLogger(m_sName);
+    logger.Init(LOG_FILE, m_sName, LOG_LEVEL);
     m_cCurrentTexture = nullptr;
     m_cCurrentText = nullptr;
     m_cImageTimer.Init();
@@ -75,7 +75,7 @@ void IntroState::HandleEvents(GameEngine* game)
             // If they hit a key we change to the press start state
         case SDL_KEYDOWN:
         case SDL_MOUSEBUTTONDOWN:
-            logger->Log("User has skipped intro");
+            logger.Log("User has skipped intro");
             NextState(game);
             break;
         }

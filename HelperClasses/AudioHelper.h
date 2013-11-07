@@ -36,7 +36,7 @@ public:
 private:
     AudioHelper() { }
     static AudioHelper m_AudioHelper;
-    GameLog *logger;
+    GameLog logger;
     std::string m_sName;
     int m_iSoundVolume;
     int m_iAllVolume;

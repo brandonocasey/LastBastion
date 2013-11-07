@@ -1,12 +1,3 @@
-enum ElementType
-{
-    None,
-    Fire,
-    Earth,
-    Air,
-    Water,
-    Metal
-};
 
 class BaseObject
 {

@@ -6,10 +6,14 @@
 * @param callback_function the function to call when the menu choice is selected
 * @param visible           whether or not this item is selectable
 */
-MenuItem::MenuItem( std::string name, boost::function<void(GameEngine* game)> callback_function, bool selectable)
+MenuItem::MenuItem(std::string name, boost::function<void(GameEngine* game)> callback_function, bool selectable)
 {
     m_sText = name;
-    logger = logger->GetLogger(m_sText);
+    m_cPosition.x = 0;
+    m_cPosition.y = 0;
+    //m_cPosition.h = 0;
+    //m_cPosition.w = 0;
+    logger.Init(LOG_FILE, m_sText, LOG_LEVEL);
 
     // Action function to run
     m_fMenuCallback = callback_function;
@@ -49,7 +53,7 @@ void MenuItem::RunCallback(GameEngine* game)
     // Stored action function to run when clicked
     if( this->CheckCollison() )
     {
-        logger->Log("User Clicked Me");
+        logger.Log("User Clicked Me");
         m_fMenuCallback(game);
     }
 }
@@ -124,16 +128,22 @@ void MenuItem::Update(GameEngine* game)
         }
         else
         {
-            FadeIn(m_cCurrentColor.a);
+            m_cCurrentColor.a = FadeIn(m_cCurrentColor.a);
         }
     }
-    else
+    else if( m_bSelectable )
     {
         m_cFadeTimer.Cleanup();
-        FadeIn(m_cCurrentColor.a);
+        m_cCurrentColor.a = FadeIn(m_cCurrentColor.a);
     }
 
     m_CurrentTexture = game->RenderHelper->LoadText(m_sText, DEFAULT_FONT_FILE, DEFAULT_FONT_SIZE, m_cCurrentColor);
+
+    if( SDL_SetTextureAlphaMod(m_CurrentTexture, m_cCurrentColor.a) == -1 )
+    {
+        logger.Log(" Alpha Not supported huh?");
+    }
+    logger.Log("Current alpha " + std::to_string(m_cCurrentColor.a));
 }
 
 /**
@@ -144,7 +154,7 @@ int MenuItem::FadeOut(int current_alpha)
 {
     if( current_alpha > 120 )
     {
-        current_alpha -= 1;
+        current_alpha -= 10;
     }
     return current_alpha;
 }
@@ -157,7 +167,7 @@ int MenuItem::FadeIn(int current_alpha)
 {
     if( current_alpha < 255 )
     {
-        current_alpha += 1;
+        current_alpha += 10;
     }
 
     return current_alpha;
@@ -172,7 +182,6 @@ bool MenuItem::CheckCollison()
     {
         return false;
     }
-
     int mouse_x = 0;
     int mouse_y = 0;
     SDL_GetMouseState(&mouse_x, &mouse_y);

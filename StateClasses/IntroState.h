@@ -44,5 +44,5 @@ private:
     std::vector<std::string> m_vTexts;
     SDL_Texture* m_cCurrentTexture;
     SDL_Texture* m_cCurrentText;
-    GameLog *logger;
+    GameLog logger;
 };

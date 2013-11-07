@@ -27,14 +27,17 @@
     <ClInclude Include="StateClasses\MainMenuState.h" />
     <ClInclude Include="StateClasses\MapState.h" />
     <ClInclude Include="StateClasses\NewGameState.h" />
-    <ClInclude Include="StateClasses\PauseState.h" />
     <ClInclude Include="StateClasses\PopUpState.h" />
     <ClInclude Include="StateClasses\SaveGameState.h" />
-    <ClInclude Include="StateClasses\SettingState.h" />
     <ClInclude Include="StateClasses\ShopState.h" />
     <ClInclude Include="StateClasses\StartState.h" />
     <ClInclude Include="StateClasses\TalentState.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="HelperClasses\SaveGame.h" />
+    <ClInclude Include="GameClasses\Player.h" />
+    <ClInclude Include="GameClasses\TileSet.h" />
+    <ClInclude Include="StateClasses\SettingsState.h" />
+    <ClInclude Include="StateClasses\PauseGameState.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\GameEngine.cpp" />
@@ -47,6 +50,20 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StateClasses\StartState.cpp" />
     <ClCompile Include="StateClasses\MainMenuState.cpp" />
+    <ClCompile Include="HelperClasses\SaveGame.cpp" />
+    <ClCompile Include="HelperClasses\EventHelper.cpp" />
+    <ClCompile Include="StateClasses\LevelSelectState.cpp" />
+    <ClCompile Include="StateClasses\LoadGameState.cpp" />
+    <ClCompile Include="StateClasses\MapState.cpp" />
+    <ClCompile Include="StateClasses\NewGameState.cpp" />
+    <ClCompile Include="StateClasses\PopUpState.cpp" />
+    <ClCompile Include="StateClasses\SaveGameState.cpp" />
+    <ClCompile Include="StateClasses\SettingsState.cpp" />
+    <ClCompile Include="StateClasses\ShopState.cpp" />
+    <ClCompile Include="StateClasses\TalentState.cpp" />
+    <ClCompile Include="HelperClasses\AssetLoader.cpp" />
+    <ClCompile Include="GameClasses\TileSet.cpp" />
+    <ClCompile Include="StateClasses\PauseGameState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -56,5 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="GDD.txt" />
+    <Text Include="MoreDetailedMapState.txt" />
   </ItemGroup>
 </Project>

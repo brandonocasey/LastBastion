@@ -5,29 +5,32 @@
 * should be passed a callback function
 * should be passed text options, including question text, and confirm/reject text
 */
+#include "../Utils.h"
+#include "../Classes/GameEngine.h"
+#include "../BaseClasses/BaseMenu.h"
 
-class PopUpState : BaseGameState
+class PopUpState : BaseMenu
 {
 public:
-    void Init(GameEngine* game) = 0;
-    void Cleanup(GameEngine* game) = 0;
 
-    void PauseState(GameEngine* game) = 0;
-    void ResumeState(GameEngine* game) = 0;
+    void Init(std::string question, std::string confirm_answer, std::string deny_answer);
+    void Cleanup(GameEngine* game);
 
-    void HandleEvents(GameEngine* game) = 0;
-    void Update(GameEngine* game) = 0;
-    void Draw(GameEngine* game) = 0;
+    void PauseState(GameEngine* game);
+    void ResumeState(GameEngine* game);
 
-    PopUpState* Instance(std::string name, std::string confirm_choice, std::string reject_choice, std::string question, boost::function confirm_callback);
+    void HandleEvents(GameEngine* game);
+    void Update(GameEngine* game);
+    void Draw(GameEngine* game);
+
+    void RejectCallback(GameEngine* game);
 
 protected:
-    PopUpMenu() { } // Constructor
     std::string m_sName;
     std::string m_sConfirmChoice;
     std::string m_sRejectChoice;
     std::string m_sQuestion;
-    boost::function m_cCallbackOnConfirm;
+    boost::function<void(GameEngine* game)> m_fMenuCallback;
     // callback
-    GameLog* logger;
+    GameLog logger;
 };

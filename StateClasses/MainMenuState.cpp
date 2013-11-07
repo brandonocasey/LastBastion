@@ -9,25 +9,31 @@ void MainMenuState::QuitCallback( GameEngine* game )
 
 void MainMenuState::NewGameCallback( GameEngine* game )
 {
-    //game->ChangeState( NewGameState::Instance() );
+    game->PushState( NewGameState::Instance() );
 }
 
 void MainMenuState::LoadGameCallback( GameEngine* game )
 {
-    //game->ChangeState( LoadGameState::Instance() );
+    //game->PushState( LoadGameState::Instance() );
 }
 
 void MainMenuState::SettingsCallback( GameEngine* game )
 {
-    //game->ChangeState( SettingsState::Instance() );
+    game->PushState( SettingsState::Instance() );
 }
 
 void MainMenuState::Init( GameEngine* game )
 {
     m_sName = "MainMenu";
-    logger = logger->GetLogger(m_sName);
+    logger.Init(LOG_FILE, m_sName, LOG_LEVEL);
     m_vMenuItems.push_back( new MenuItem("New Game", boost::bind(&MainMenuState::NewGameCallback, this, _1)) );
-    m_vMenuItems.push_back( new MenuItem("Load Game", boost::bind(&MainMenuState::LoadGameCallback, this, _1), false ) );
+
+    bool games_to_load = false;
+    if( game->AssetLoader->SaveFilesExist() )
+    {
+        games_to_load = true;
+    }
+    m_vMenuItems.push_back( new MenuItem("Load Game", boost::bind(&MainMenuState::LoadGameCallback, this, _1), games_to_load ) );
     m_vMenuItems.push_back( new MenuItem("Settings", boost::bind(&MainMenuState::SettingsCallback, this, _1)) );
     m_vMenuItems.push_back( new MenuItem("Quit", boost::bind(&MainMenuState::QuitCallback, this, _1)) );
 }
@@ -47,6 +53,30 @@ void MainMenuState::ResumeState( GameEngine* game )
 
 void MainMenuState::HandleEvents( GameEngine* game )
 {
+    SDL_Event event;
+
+    if (SDL_PollEvent(&event))
+    {
+        switch (event.type)
+        {
+        case SDL_MOUSEBUTTONDOWN:
+            for(MenuItem *it : m_vMenuItems)
+            {
+                it->RunCallback(game);
+            }
+            break;
+
+        case SDL_KEYDOWN:
+            switch (event.key.keysym.sym)
+            {
+            case SDLK_ESCAPE:
+
+                BackCallback(game);
+                break;
+            }
+            break;
+        }
+    }
 }
 
 void MainMenuState::Update( GameEngine* game )
