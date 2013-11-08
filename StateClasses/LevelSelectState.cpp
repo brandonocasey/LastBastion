@@ -8,7 +8,7 @@ void LevelSelectState::Init(GameEngine* game)
     m_sName = "LevelSelect";
     logger.Init(LOG_FILE, m_sName, LOG_LEVEL);
 
-    if( game->AssetLoader->SaveFileLoaded() )
+    if( game->AssetLoader->SaveFilesExist() )
     {
         game->AssetLoader->LoadSaveData();
     }
@@ -35,11 +35,12 @@ void LevelSelectState::QuitGameCallback(GameEngine* game)
 
 void LevelSelectState::QuitToMenuCallback(GameEngine* game)
 {
-    game->ChangeState( MainMenu::Instance() );
+    game->ChangeState( MainMenuState::Instance() );
 }
 void LevelSelectState::LevelCallback(GameEngine* game)
 {
-    std::string map_folder = MAP_FOLDER + "level1.tmx";
+    std::string map_folder = MAP_FOLDER;
+    map_folder += "level1.tmx";
     game->AssetLoader->LoadMap( map_folder );
     game->ChangeState( MapState::Instance() );
 }
@@ -63,4 +64,19 @@ void LevelSelectState::Update( GameEngine* game )
 void LevelSelectState::Draw( GameEngine* game )
 {
     DrawMenuItems(game);
+}
+
+void LevelSelectState::PauseState( GameEngine* game )
+{
+
+}
+
+void LevelSelectState::ResumeState( GameEngine* game )
+{
+
+}
+
+void LevelSelectState::HandleEvents( GameEngine* game )
+{
+
 }

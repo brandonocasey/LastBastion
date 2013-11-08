@@ -28,3 +28,8 @@ void AssetLoader::LoadCurrentSave()
 void AssetLoader::SaveFileLoaded()
 {
 }
+
+void AssetLoader::LoadSaveData()
+{
+
+}

@@ -11,9 +11,9 @@
 * Needs to maintain a current collision array
 *
 */
-#include "../GameClasses/TestTower.h"
-#include "../GameClasses/TestMonster.h"
-#include "../GameClasses/TileSet.h"
+#include "../BaseClasses/BaseTower.h"
+#include "../BaseClasses/BaseMonster.h"
+#include "../GameClasses/SpriteSheet.h"
 #include "../Utils.h"
 #include "../Classes/GameEngine.h"
 #include "../BaseClasses/BaseGameState.h"
@@ -21,7 +21,7 @@
 
 #include "../StateClasses/PauseGameState.h"
 
-class MapState : BaseGameState
+class MapState : public BaseGameState
 {
 public:
     void Init(GameEngine* game);
@@ -60,8 +60,8 @@ public:
 private:
 
     static MapState m_MapState;
-    std::vector<TestTower*> m_vMonsterList;
-    std::vector<TestMonster*> m_vTowerList;
+    std::vector<BaseMonster*> m_vMonsterList;
+    std::vector<BaseTower*> m_vTowerList;
     std::vector< std::vector<int> > m_vviCollision;
-    std::hash_map<int, TileSet*> m_hTileSet;
+    std::hash_map<int, SpriteSheet*> m_hTileSet;
 };

@@ -21,9 +21,9 @@
     <ClInclude Include="Classes\GameLog.h" />
     <ClInclude Include="Classes\MenuItem.h" />
     <ClInclude Include="GameClasses\Player.h" />
+    <ClInclude Include="GameClasses\SpriteSheet.h" />
     <ClInclude Include="GameClasses\TestMonster.h" />
     <ClInclude Include="GameClasses\TestTower.h" />
-    <ClInclude Include="GameClasses\TileSet.h" />
     <ClInclude Include="HelperClasses\AnimationHelper.h" />
     <ClInclude Include="HelperClasses\AssetLoader.h" />
     <ClInclude Include="HelperClasses\AudioHelper.h" />
@@ -53,7 +53,7 @@
     <ClCompile Include="Classes\GameEngine.cpp" />
     <ClCompile Include="Classes\GameLog.cpp" />
     <ClCompile Include="Classes\MenuItem.cpp" />
-    <ClCompile Include="GameClasses\TileSet.cpp" />
+    <ClCompile Include="GameClasses\SpriteSheet.cpp" />
     <ClCompile Include="HelperClasses\AssetLoader.cpp" />
     <ClCompile Include="HelperClasses\AudioHelper.cpp" />
     <ClCompile Include="HelperClasses\EventHelper.cpp" />

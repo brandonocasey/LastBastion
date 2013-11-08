@@ -35,9 +35,9 @@
     <ClInclude Include="Utils.h" />
     <ClInclude Include="HelperClasses\SaveGame.h" />
     <ClInclude Include="GameClasses\Player.h" />
-    <ClInclude Include="GameClasses\TileSet.h" />
     <ClInclude Include="StateClasses\SettingsState.h" />
     <ClInclude Include="StateClasses\PauseGameState.h" />
+    <ClInclude Include="GameClasses\SpriteSheet.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\GameEngine.cpp" />
@@ -62,8 +62,8 @@
     <ClCompile Include="StateClasses\ShopState.cpp" />
     <ClCompile Include="StateClasses\TalentState.cpp" />
     <ClCompile Include="HelperClasses\AssetLoader.cpp" />
-    <ClCompile Include="GameClasses\TileSet.cpp" />
     <ClCompile Include="StateClasses\PauseGameState.cpp" />
+    <ClCompile Include="GameClasses\SpriteSheet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

@@ -16,6 +16,11 @@ public:
     void HandleEvents(GameEngine* game);
     void Update(GameEngine* game);
     void Draw(GameEngine* game);
+
+
+    void LoadGameState::LoadGameCallback(GameEngine* game);
+    void LoadGameState::BackCallback(GameEngine* game);
+
     static LoadGameState* Instance()
     {
         return &m_LoadGameState;

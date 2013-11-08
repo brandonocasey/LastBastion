@@ -16,6 +16,11 @@ public:
     void HandleEvents(GameEngine* game);
     void Update(GameEngine* game);
     void Draw(GameEngine* game);
+
+
+    void BackCallback(GameEngine* game);
+
+    void LevelSelectCallback(GameEngine* game);
     static NewGameState* Instance()
     {
         return &m_NewGameState;

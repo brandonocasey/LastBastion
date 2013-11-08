@@ -1,7 +1,8 @@
 #pragma once
 #include "../Utils.h"
 #include "../BaseClasses/BaseMonster.h"
-class BaseTower
+
+class BaseTower : public BaseObject
 {
 public:
     int attack_radius;
@@ -11,7 +12,9 @@ public:
     int attack_damage;
     bool cooling_down;
     ElementType element_type;
-    void Update(std::vector monster_list)
+    //void Update(std::vector monster_list)
+    void Update();
+    /*
     {
         if( ! cooling_down )
         {
@@ -32,14 +35,17 @@ public:
                     }
                 }
             }
+            
         }
+        
         // Check if monster is in range
         // if so we use an attack and use an animation for this
     }
+    */
     bool Attack(BaseMonster* monster)
     {
         bool dead = false;
-        dead = monster->TakeDamage(attack_damage, element_type)
+        dead = monster->TakeDamage(attack_damage, element_type);
         return dead;
     }
 };

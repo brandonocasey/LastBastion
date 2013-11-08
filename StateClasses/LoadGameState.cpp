@@ -13,8 +13,8 @@ void LoadGameState::Init(GameEngine* game)
     {
         games_to_load = true;
     }
-    m_vMenuItems.push_back( new MenuItem("Load", boost::bind(&MainMenuState::LoadGameCallback, this, _1), games_to_load) );
-    m_vMenuItems.push_back( new MenuItem("Back", boost::bind(&MainMenuState::BackCallback, this, _1)) );
+    m_vMenuItems.push_back( new MenuItem("Load", boost::bind(&LoadGameState::LoadGameCallback, this, _1), games_to_load) );
+    m_vMenuItems.push_back( new MenuItem("Back", boost::bind(&LoadGameState::BackCallback, this, _1)) );
 }
 void LoadGameState::Cleanup(GameEngine* game)
 {
@@ -27,10 +27,16 @@ void LoadGameState::ResumeState(GameEngine* game)
 {
 }
 
-void LoadGameState::LoadGameCallback()
+void LoadGameState::LoadGameCallback(GameEngine* game)
 {
     //game->AssetHandler->LoadGame()
-    //game->ChangeState( LevelSelectState::Instance() );
+    game->ChangeState( LevelSelectState::Instance() );
+}
+
+void LoadGameState::BackCallback(GameEngine* game)
+{
+    //game->AssetHandler->LoadGame()
+    game->PopState();
 }
 void LoadGameState::HandleEvents(GameEngine* game)
 {

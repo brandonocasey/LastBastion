@@ -40,6 +40,7 @@
 #define GAME_NAME "Last Bastion"
 #define SPRITES_FOLDER "Assets/sprites/"
 #define IMAGE_FOLDER "Assets/images/"
+#define MAP_FOLDER "Assets/maps/"
 #define FONT_FOLDER "Assets/fonts/"
 #define MUSIC_FOLDER "Assets/music/"
 #define SOUND_FOLDER "Assets/sounds/"

@@ -9,7 +9,7 @@ void PopUpState::Init(std::string question, std::string confirm_answer, std::str
     m_sConfirmChoice = confirm_answer;
     m_sRejectChoice = deny_answer;
 
-    m_vMenuItems.push_back( new MenuItem(m_sConfirmChoice, boost::bind(&callback_function, this, _1)) );
+    //m_vMenuItems.push_back( new MenuItem(m_sConfirmChoice, boost::bind(&callback_function, this, _1)) );
     m_vMenuItems.push_back( new MenuItem(m_sRejectChoice, boost::bind(&PopUpState::RejectCallback, this, _1)) );
 }
 

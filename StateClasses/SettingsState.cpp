@@ -55,3 +55,23 @@ void SettingsState::Draw( GameEngine* game )
 {
     DrawMenuItems(game);
 }
+
+void SettingsState::BackCallback( GameEngine* game )
+{
+
+}
+
+void SettingsState::PauseState( GameEngine* game )
+{
+
+}
+
+void SettingsState::ResumeState( GameEngine* game )
+{
+
+}
+
+void SettingsState::HandleEvents( GameEngine* game )
+{
+
+}

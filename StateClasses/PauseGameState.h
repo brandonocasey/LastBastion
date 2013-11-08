@@ -4,7 +4,8 @@
 #include "../StateClasses/SettingsState.h"
 #include "../StateClasses/LevelSelectState.h"
 #include "../StateClasses/LoadGameState.h"
-class PauseGameState : BaseMenu
+#include "../StateClasses/SaveGameState.h"
+class PauseGameState : public BaseMenu
 {
 public:
     void Init(GameEngine* game);
@@ -22,6 +23,22 @@ public:
     void SettingsCallback(GameEngine* game);
     void BackToGame(GameEngine* game);
 
+    static PauseGameState* Instance()
+    {
+        return &m_PauseGameState;
+    }
+    std::string GetName()
+    {
+        if( m_sName.empty() )
+        {
+            m_sName = "Unknown";
+        }
+        return m_sName;
+    }
+protected:
+    PauseGameState() {}
+
 private:
     GameLog logger;
+    static PauseGameState m_PauseGameState;
 };

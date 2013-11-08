@@ -4,7 +4,7 @@ MapState MapState::m_MapState;
 
 void MapState::Init(GameEngine* game)
 {
-    m_cMap = game->AssetLoader->GetCurrentMap();
+//    m_cMap = game->AssetLoader->GetCurrentMap();
 
     // Render a loading screen
 
@@ -113,9 +113,9 @@ void MapState::HandleEvents(GameEngine* game)
 }
 void MapState::Update(GameEngine* game)
 {
-    UpdateTowers(game);
+   // UpdateTowers(game);
     //UpdateCollision(game);
-    UpdateMonsters(game);
+//    UpdateMonsters(game);
     //UpdatePlayer(game);
 }
 void MapState::Draw(GameEngine* game)
@@ -159,9 +159,9 @@ void MapState::DrawMonsters(GameEngine* game)
 {
     if( ! m_vMonsterList.empty() )
     {
-        for(Monster* monster : m_vMonsterList)
+        for(BaseMonster* monster : m_vMonsterList)
         {
-            monster.Draw();
+            //monster->Draw(game);
         }
     }
 }
@@ -169,9 +169,9 @@ void MapState::DrawTowers(GameEngine* game)
 {
     if( ! m_vTowerList.empty() )
     {
-        for(Tower* tower : m_vTowerList)
+        for(BaseTower* tower : m_vTowerList)
         {
-            tower.Draw();
+            //tower->Draw(game);
         }
     }
 }
@@ -184,13 +184,13 @@ void MapState::UpdateMonsters()
     if( m_vMonsterList.empty() )
     {
         // Spawns at spawn point
-        m_vTowerList.push_back( new Monster)
+        //m_vTowerList.push_back( new BaseMonster)
     }
     else
     {
-        for(Monster* monster : m_vMonsterList)
+        for(BaseMonster* monster : m_vMonsterList)
         {
-            monster.Update(m_vviCollision);
+            //monster.Update(m_vviCollision);
         }
     }
 }
@@ -199,13 +199,13 @@ void MapState::UpdateTowers()
 {
     if( m_vTowerList.empty() )
     {
-        m_vTowerList.push_back( new TestTower(5, 5) )
+       // m_vTowerList.push_back( new TestTower(5, 5) );
     }
     else
     {
         for(BaseTower* tower : m_vTowerList)
         {
-            tower->Update(m_vMonsterList);
+            //tower->Update(m_vMonsterList);
         }
     }
 }

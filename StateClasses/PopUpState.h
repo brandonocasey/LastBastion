@@ -13,7 +13,7 @@ class PopUpState : BaseMenu
 {
 public:
 
-    void Init(std::string question, std::string confirm_answer, std::string deny_answer);
+    void Init(std::string question, std::string confirm_answer, std::string deny_answer, boost::function<void(GameEngine* game)> callback_function);
     void Cleanup(GameEngine* game);
 
     void PauseState(GameEngine* game);
